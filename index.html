@@ -60,10 +60,21 @@
         width: 20vw;
         height: 40vh;
         /* background: black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     footer div:hover {
         border: 2px solid black;
+    }
+
+    span {
+        /* height: 2rem;
+        width: 4rem; */
+
+        justify-self: start;
     }
 
     /* specific */
@@ -83,7 +94,8 @@
 
     .logo {}
 
-    .logo div {
+    .logo div,
+    span {
         /* position: absolute; */
         /* height: 2rem;
         width: 4rem;
@@ -97,6 +109,7 @@
         margin-bottom: .2rem;
         transform: rotateZ(-15deg);
     }
+
 
 
 
@@ -134,12 +147,22 @@
     <main>
         <!-- main projects links -->
         <!-- <a href=""><img src="" alt=""></a> -->
-        <div class="web"></div>
-        <div class="web"></div>
-        <div class="web"></div>
-        <div class="web"></div>
-        <div class="web"></div>
-        <div class="web"></div>
+        <div class="web">
+            <a href="https://coaster-route-polyline.herokuapp.com/">1; coaster route</a>
+        </div>
+        <div class="web">
+            <a href="https://any-box.herokuapp.com/">2; anybox</a>
+        </div>
+        <div class="web">
+            <a href="https://treeing-pre.herokuapp.com/">3; treeing</a>
+        </div>
+        <div class="web">
+            <a href="https://treeing-pre.herokuapp.com/">4; cleaning</a>
+        </div>
+        <div class="web">
+            <a href="https://volunteer-station-vanilla.herokuapp.com/">5; volunteer station</a>
+        </div>
+        <div class="web">6; lost</div>
 
 
     </main>
@@ -148,14 +171,25 @@
     <footer>
         <div class="contact">
             <span class="red"></span>
+            <h2>contact</h2>
+            <p>sample</p>
+            <p>sample</p>
+            <p>sample</p>
         </div>
         <div class="about">
             <span class="green"></span>
+            <h2>about</h2>
+            <p>sample</p>
+            <p>sample</p>
+            <p>sample</p>
             <!-- sm links -->
         </div>
-        <span class="black"></span>
-        <div class="something">
-
+        <div class="sample">
+            <span class="black"></span>
+            <h2>more info</h2>
+            <p>sample</p>
+            <p>sample</p>
+            <p>sample</p>
         </div>
 
     </footer>
