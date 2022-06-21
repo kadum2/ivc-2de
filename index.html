@@ -19,7 +19,7 @@
     }
 
     header {
-        /* background: red; */
+        /* background: #ffd2d2; */
         /* height: 20vh; */
         height: auto;
         padding: 1rem;
@@ -55,6 +55,8 @@
         /* align-items: center; */
         align-items: flex-start;
         padding: 2rem;
+        background: #303030;
+
     }
 
     footer div {
@@ -70,6 +72,7 @@
         border-radius: 1rem;
         box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
         cursor: pointer;
+        background: white;
     }
 
     footer div:hover {
@@ -79,6 +82,11 @@
 
     a {
         /* all: unset; */
+    }
+
+    img {
+        height: 100%;
+        /* width: 100%; */
     }
 
     span {
@@ -99,11 +107,19 @@
         transition: .1s linear;
         margin: 4rem;
         cursor: pointer;
+        overflow: hidden;
+        position: relative;
     }
 
     .web:hover {
         transform: translate(-1rem, -1rem);
         box-shadow: 1.2rem 1.2rem 0 rgb(39, 240, 96);
+    }
+
+    .web h2 {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
     }
 
     .logo {}
@@ -118,15 +134,15 @@
     }
 
     .red {
-        background: rgb(255, 42, 42);
+        background: #ff2a2a;
     }
 
     .green {
-        background: rgb(39, 240, 96);
+        background: #27f060;
     }
 
     .black {
-        background: rgb(10, 10, 10);
+        background: #0a0a0a;
     }
 
     .white {
@@ -173,23 +189,34 @@
         <!-- main projects links -->
         <!-- <a href=""><img src="" alt=""></a> -->
         <div class="web">
-            <a href="https://coaster-route-polyline.herokuapp.com/" target="_blank">1; coaster route</a>
+            <!-- <a href="https://coaster-route-polyline.herokuapp.com/" target="_blank">1; coaster route</a> -->
+            <h2>coaster route</h2>
+            <a href="https://coaster-route-polyline.herokuapp.com/" target="_blank"><img src="./2022-06-21 173036.png"
+                    alt=""></a>
         </div>
         <div class="web">
-            <a href="https://any-box.herokuapp.com/" target="_blank">2; anybox</a>
+            <h2>anybox</h2>
+
+            <!-- <a href="https://any-box.herokuapp.com/" target="_blank">2; anybox</a> -->
+            <a href="https://any-box.herokuapp.com/" target="_blank"><img src="./Grand_mosque_of_Mosul_.jpg" alt=""></a>
         </div>
         <div class="web">
-            <a href="https://treeing-pre.herokuapp.com/" target="_blank">3; treeing</a>
+            <h2>treeing</h2>
+
+            <!-- <a href="https://treeing-pre.herokuapp.com/" target="_blank">3; treeing</a> -->
+            <a href="https://treeing-pre.herokuapp.com/" target="_blank"><img
+                    src="./284727422_547848963449241_7024204435922870988_n.jpg" alt=""></a>
         </div>
         <div class="web">
-            <a href="https://treeing-pre.herokuapp.com/" target="_blank">4; cleaning</a>
+            <h2>cleaning</h2>
+            <!-- <a href="https://treeing-pre.herokuapp.com/" target="_blank">4; cleaning</a> -->
+            <a href="https://treeing-pre.herokuapp.com/" target="_blank"><img
+                    src="./284901757_379804027544638_4759272877655960098_n.jpg" alt=""></a>
         </div>
         <div class="web">
             <a href="https://volunteer-station-vanilla.herokuapp.com/" target="_blank">5; volunteer station</a>
         </div>
         <div class="web">6; lost</div>
-
-
     </main>
 
 
