@@ -8,15 +8,7 @@
     <title>iraqi volunteer community; 2nd design</title>
 </head>
 <style>
-    /* elements */
-    body {
-        margin: 0%;
-        height: 100vh;
-    }
-
-    body * {
-        box-sizing: border-box;
-    }
+    /* basic */
 
     header {
         /* background: #ffd2d2; */
@@ -32,6 +24,19 @@
         background-size: cover;
     }
 
+    .logo {}
+
+    .logo div,
+    span {
+        height: 1.5rem;
+        width: 3rem;
+        margin-bottom: .2rem;
+        transform: rotateZ(-15deg);
+    }
+
+
+
+    /* main */
 
     main {
         height: auto;
@@ -50,6 +55,31 @@
 
     main a:hover {}
 
+
+    .web {
+        background: rgb(128, 128, 128);
+        height: 20vw;
+        width: 20vw;
+        transition: .1s linear;
+        margin: 4rem;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        border-radius: .4rem;
+    }
+
+    .web:hover {
+        transform: translate(-1rem, -1rem);
+        box-shadow: 1.2rem 1.2rem 0 rgb(39, 240, 96);
+    }
+
+    .web h2 {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    /* footer */
     footer {
         min-height: 20vh;
         border-top: 2px solid black;
@@ -88,9 +118,9 @@
         transform: scale(1.01);
     }
 
-    a {
-        /* all: unset; */
-    }
+    /* elements */
+
+    a {}
 
     img {
         height: 100%;
@@ -98,49 +128,22 @@
     }
 
     span {
-        /* height: 2rem;
-        width: 4rem; */
-
         justify-self: start;
         align-self: flex-start;
         transform: rotateZ(-15deg);
-
     }
 
-    /* specific */
-    .web {
-        background: rgb(128, 128, 128);
-        height: 20vw;
-        width: 20vw;
-        transition: .1s linear;
-        margin: 4rem;
-        cursor: pointer;
-        overflow: hidden;
-        position: relative;
-        border-radius: .4rem;
+    body {
+        margin: 0%;
+        height: 100vh;
     }
 
-    .web:hover {
-        transform: translate(-1rem, -1rem);
-        box-shadow: 1.2rem 1.2rem 0 rgb(39, 240, 96);
+    body * {
+        box-sizing: border-box;
     }
 
-    .web h2 {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-    }
 
-    .logo {}
-
-    .logo div,
-    span {
-        height: 1.5rem;
-        width: 3rem;
-        /* margin-bottom: 10%; */
-        margin-bottom: .2rem;
-        transform: rotateZ(-15deg);
-    }
+    /* shared */
 
     .red {
         background: #ff2a2a;
@@ -157,9 +160,6 @@
     .white {
         background: rgb(245, 245, 245);
     }
-
-
-    /* shared */
 
 
     /* mobile case */
@@ -204,12 +204,6 @@
                     alt=""></a>
         </div>
         <div class="web">
-            <h2>anybox</h2>
-
-            <!-- <a href="https://any-box.herokuapp.com/" target="_blank">2; anybox</a> -->
-            <a href="https://any-box.herokuapp.com/" target="_blank"><img src="./Grand_mosque_of_Mosul_.jpg" alt=""></a>
-        </div>
-        <div class="web">
             <h2>treeing</h2>
 
             <!-- <a href="https://treeing-pre.herokuapp.com/" target="_blank">3; treeing</a> -->
@@ -223,7 +217,15 @@
                     src="./284901757_379804027544638_4759272877655960098_n.jpg" alt=""></a>
         </div>
         <div class="web">
-            <a href="https://volunteer-station-vanilla.herokuapp.com/" target="_blank">5; volunteer station</a>
+            <h2>anybox</h2>
+
+            <!-- <a href="https://any-box.herokuapp.com/" target="_blank">2; anybox</a> -->
+            <a href="https://any-box.herokuapp.com/" target="_blank"><img src="./Grand_mosque_of_Mosul_.jpg" alt=""></a>
+        </div>
+        <div class="web">
+            <h2>volunteer station</h2>
+            <a href="https://volunteer-station-vanilla.herokuapp.com/" target="_blank"><img src="./socialnetwork.jpg"
+                    alt=""></a>
         </div>
         <div class="web">6; lost</div>
     </main>
@@ -236,23 +238,35 @@
             <a href="https://www.instagram.com/kadum_0/"><img
                     src="./instagram-round-icon-vector-instagram-round-multicolor-icon-white-background-134391805.jpg"
                     alt=""></a>
-            <p>twitter</p>
-            <p>facebook</p>
-            <p>email</p>
+            <a href="t.me/kadum0">
+                <img src="./telegram-logo.png" alt="">
+            </a>
+            <!-- <p>facebook</p> -->
+            <p>email; kadom1230@gmail.com</p>
         </div>
-        <div class="about">
+        <div class="achievements">
             <span class="green"></span>
-            <h2>عننا</h2>
-            <p>sample</p>
 
+
+
+
+            <h2>انجازات المشروع</h2>
+            <p><a href="https://coaster-route-polyline.herokuapp.com/"><b>الخط العام</b></a>: تم اضافة ؟ مسار</p>
+            <p><a href="http://treeing-pre.herokuapp.com/"><b>تشجير</b></a>: عدد حملات التشجير المكتلمة: ؟ </p>
+            <p>تنظيف: عدد حملات التنظيف المكتلمة: ؟ </p>
+            <p> صندوك: عدد المراكز: ؟, عدد عمليات التوزيع: ؟ </p>
+            <p>المحطة التطوعية: عدد الحملات المكتلة: ؟, عدد الحملات الحالية: ؟, عدد الحملات القادمة: ؟ </p>
+            <p>المساهمين</p>
             <!-- sm links -->
         </div>
         <div class="sample">
             <span class="black"></span>
             <h2>معلومات اضافية</h2>
-            <p>sample</p>
-            <p>sample</p>
-            <p>sample</p>
+            <p>الخط العام: تسهيل التنقل</p>
+            <p>تشجير: توثيق و اضافة حملات تشجير</p>
+            <p>تنظيف: توثيق و اضافة حملات التنظيف</p>
+            <p>صندوك: جمع تبرعات الاغراض</p>
+            <p>المحطة التطوعية: منصة نشر و مسهاهمة في الحملات التطوعية</p>
         </div>
 
     </footer>
