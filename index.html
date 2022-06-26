@@ -13,11 +13,12 @@
     header {
         /* background: #ffd2d2; */
         /* height: 20vh; */
+        width: 100%;
         height: auto;
         padding: 1rem;
         border-bottom: 2px solid rgb(255, 42, 42);
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         /* background: url('./pietro-jeng-n6B49lTx7NM-unsplash.jpg'); */
         /* background: url('./deepmind-s2TPKAD6fag-unsplash.jpg'); */
@@ -197,12 +198,14 @@
 
 <body>
     <header>
+        <div></div>
         <div class="logo">
             <div class="black"></div>
             <!-- <div class="white"></div> -->
             <div class="green"></div>
             <div class="red"></div>
         </div>
+        <button id="en">en</button>
 
     </header>
 
@@ -211,7 +214,7 @@
         <!-- <a href=""><img src="" alt=""></a> -->
         <div class="web">
             <!-- <a href="https://coaster-route-polyline.herokuapp.com/" target="_blank">1; coaster route</a> -->
-            <h2>coaster route | الخط العام</h2>
+            <h2>public lines | الخط العام</h2>
             <a href="https://coaster-route-polyline.herokuapp.com/" target="_blank"><img src="./2022-06-21 173036.png"
                     alt=""></a>
         </div>
@@ -247,7 +250,7 @@
     <footer>
         <div class="contact">
             <span class="red"></span>
-            <h2>تواصل معنا</h2>
+            <h2>تواصل معنا: و طلب صلاحيات الادمن</h2>
             <a href="https://www.instagram.com/kadum_0/"><img
                     src="./instagram-round-icon-vector-instagram-round-multicolor-icon-white-background-134391805.jpg"
                     alt=""></a>
@@ -276,7 +279,7 @@
             </select>
             <!-- sm links -->
         </div>
-        <div class="sample">
+        <div class="additionalInfo">
             <span class="black"></span>
             <h2>معلومات اضافية: الهدف من كل مشروع</h2>
             <li>الخط العام: تسهيل التنقل</li>
@@ -287,7 +290,112 @@
             <li>مفقود: ؟؟؟؟؟؟ </li>
         </div>
 
+
     </footer>
+
+
+    <script>
+        ///////////////////deploy translating feature 
+        document.querySelector("#en").addEventListener("click", (e) => {
+            // e.target.textContent = "ar"
+            if (e.target.textContent == "en") {
+                console.log("translate to en")
+                document.querySelector("footer").innerHTML = `
+                
+        <div class="contact">
+            <span class="red"></span>
+            <h2>contact us </h2>
+            <a href="https://www.instagram.com/kadum_0/"><img
+                    src="./instagram-round-icon-vector-instagram-round-multicolor-icon-white-background-134391805.jpg"
+                    alt=""></a>
+            <a href="t.me/kadum0">
+                <img src="./telegram-logo.png" alt="">
+            </a>
+            <!-- <p>facebook</p> -->
+            <p>email; kadom1230@gmail.com</p>
+        </div>
+        <div class="achievements">
+            <span class="green"></span>
+            <h2>project achievements</h2>
+
+            <li><a href="https://coaster-route-polyline.herokuapp.com/"> <b>27</b>routes have been added </a></li>
+            <li>treeing; Number of completed campaigns: <b>X</b>, number of upcoming campaigns; <b>X</b> </li>
+            <li> cleaning; Number of completed campaigns: <b>X</b>, number of upcoming campaigns; <b>X</b></li>
+            <li> <a href="http://any-box.herokuapp.com/">anybox</a>; number of collecting centers; <b>X</b>, number of distributes; <b>X</b> </li>
+            <li>volunteer staion; comleted campaigns; <b>X</b>, current campaigns; <b>X</b>, upcomming campaigns; <b>X</b></li>
+            <li>lost: ???? </li>
+            <select name="" id="">
+                <option value="">contributers </option>
+                <option value="">@ienp</option>
+                <option value="">@ienp</option>
+                <option value="">@ienp</option>
+            </select>
+            <!-- sm links -->
+        </div>
+        <div class="additionalInfo">
+            <span class="black"></span>
+            <h2>additional info; the goal of each sub project</h2>
+            <li>public lines; ease of movement </li>
+            <li>treeing; confirm the completed and upcoming planting campaigns, and allowing users to add one</li>
+            <li>cleaning; confirm the completed and upcoming cleaning campaigns, and allowing users to add one</li>
+            <li>anybox; collect the material donations, in specific locations then get dirstributed</li>
+            <li>volutneer station; ease making campaigns and contributing to them, allow new type of campaigns based on the skill, knowledge and by material donating</li>
+            <li>lost; ??? </li>
+        </div>
+`
+
+                e.target.textContent = "ar"
+            } else {
+                console.log("translate to ar")
+                document.querySelector("footer").innerHTML = `
+                <div class="contact">
+            <span class="red"></span>
+            <h2>تواصل معنا: و طلب صلاحيات الادمن</h2>
+            <a href="https://www.instagram.com/kadum_0/"><img
+                    src="./instagram-round-icon-vector-instagram-round-multicolor-icon-white-background-134391805.jpg"
+                    alt=""></a>
+            <a href="t.me/kadum0">
+                <img src="./telegram-logo.png" alt="">
+            </a>
+            <!-- <p>facebook</p> -->
+            <p>email; kadom1230@gmail.com</p>
+        </div>
+        <div class="achievements">
+            <span class="green"></span>
+            <h2>انجازات المشروع</h2>
+            <li><a href="https://coaster-route-polyline.herokuapp.com/"><b>الخط
+                        العام</b></a>: تم اضافة <b>26</b> مسار
+            </li>
+            <li><a href="http://treeing-pre.herokuapp.com/"><b>تشجير</b></a>: عدد حملات التشجير المكتلمة: ؟ </li>
+            <li>تنظيف: عدد حملات التنظيف المكتلمة: ؟ </li>
+            <li> <a href="http://any-box.herokuapp.com/"></a>صندوك: عدد المراكز: ؟, عدد عمليات التوزيع: ؟ </li>
+            <li>المحطة التطوعية: عدد الحملات المكتلة: ؟, عدد الحملات الحالية: ؟, عدد الحملات القادمة: ؟ </li>
+            <li>مفقود: ؟؟؟؟؟؟ </li>
+            <select name="" id="">
+                <option value="">المساهمين</option>
+                <option value="">@ienp</option>
+                <option value="">@ienp</option>
+                <option value="">@ienp</option>
+            </select>
+            <!-- sm links -->
+        </div>
+        <div class="additionalInfo">
+            <span class="black"></span>
+            <h2>معلومات اضافية: الهدف من كل مشروع</h2>
+            <li>الخط العام: تسهيل التنقل</li>
+            <li>تشجير: توثيق و اضافة حملات تشجير</li>
+            <li>تنظيف: توثيق و اضافة حملات التنظيف</li>
+            <li>صندوك: جمع تبرعات الاغراض</li>
+            <li>المحطة التطوعية: منصة نشر و مسهاهمة في الحملات التطوعية</li>
+            <li>مفقود: ؟؟؟؟؟؟ </li>
+        </div>
+
+`
+
+                e.target.textContent = "en"
+            }
+        })
+    </script>
 
 </body>
 
